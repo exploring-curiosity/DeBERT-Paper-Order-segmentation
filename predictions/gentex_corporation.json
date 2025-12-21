@@ -1,0 +1,59 @@
+{
+  "filename": "gentex_corporation.pdf",
+  "total_pages": 17,
+  "segment_table_pages": [
+    5
+  ],
+  "segment_pages": [
+    {
+      "segment": "ST",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        10,
+        13
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "segment": "SCH",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "segment": "SE",
+      "pages": [
+        16
+      ]
+    }
+  ]
+}

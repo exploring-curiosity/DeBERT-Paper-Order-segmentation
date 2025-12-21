@@ -1,0 +1,143 @@
+{
+  "filename": "dot.pdf",
+  "total_pages": 35,
+  "segment_table_pages": [
+    3
+  ],
+  "segment_pages": [
+    {
+      "segment": "ISA",
+      "pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "segment": "GS",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "segment": "ST",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "segment": "REF",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "segment": "FOB",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "segment": "DTM",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "segment": "TD5",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "segment": "N9",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "segment": "MSG",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        17,
+        20,
+        23
+      ]
+    },
+    {
+      "segment": "N3",
+      "pages": [
+        18,
+        21,
+        24
+      ]
+    },
+    {
+      "segment": "N4",
+      "pages": [
+        19,
+        22,
+        25
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        26,
+        27
+      ]
+    },
+    {
+      "segment": "CUR",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "segment": "PID",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "segment": "SE",
+      "pages": [
+        31
+      ]
+    },
+    {
+      "segment": "GE",
+      "pages": [
+        32
+      ]
+    },
+    {
+      "segment": "IEA",
+      "pages": [
+        33
+      ]
+    }
+  ]
+}

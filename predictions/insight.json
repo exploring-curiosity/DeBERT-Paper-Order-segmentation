@@ -1,0 +1,129 @@
+{
+  "filename": "insight.pdf",
+  "total_pages": 33,
+  "segment_table_pages": [
+    2,
+    3
+  ],
+  "segment_pages": [
+    {
+      "segment": "ST",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "segment": "CUR",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "segment": "REF",
+      "pages": [
+        7,
+        8,
+        27
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        9,
+        10,
+        22,
+        24,
+        29
+      ]
+    },
+    {
+      "segment": "FOB",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "segment": "CSH",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "segment": "DTM",
+      "pages": [
+        13,
+        30
+      ]
+    },
+    {
+      "segment": "TD5",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "segment": "SE",
+      "pages": [
+        15,
+        33
+      ]
+    },
+    {
+      "segment": "N9",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "segment": "MSG",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        18,
+        23,
+        31
+      ]
+    },
+    {
+      "segment": "N2",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "segment": "N3",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "segment": "N4",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        25,
+        26
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        32
+      ]
+    }
+  ]
+}

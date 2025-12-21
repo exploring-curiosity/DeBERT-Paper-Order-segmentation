@@ -1,0 +1,5 @@
+Collecting protobuf
+  Downloading protobuf-6.33.2-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Downloading protobuf-6.33.2-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+Installing collected packages: protobuf
+Successfully installed protobuf-6.33.2

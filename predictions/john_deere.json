@@ -1,0 +1,162 @@
+{
+  "filename": "john_deere.pdf",
+  "total_pages": 36,
+  "segment_table_pages": [
+    1
+  ],
+  "segment_pages": [
+    {
+      "segment": "PID",
+      "pages": [
+        2,
+        26
+      ]
+    },
+    {
+      "segment": "ST",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "segment": "REF",
+      "pages": [
+        5,
+        27
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        6,
+        16
+      ]
+    },
+    {
+      "segment": "TAX",
+      "pages": [
+        7,
+        29
+      ]
+    },
+    {
+      "segment": "FOB",
+      "pages": [
+        8,
+        9
+      ]
+    },
+    {
+      "segment": "N9",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "segment": "MSG",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "segment": "N2",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "segment": "N3",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "segment": "N4",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "segment": "TD5",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "segment": "TD3",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "segment": "CUR",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "segment": "PO3",
+      "pages": [
+        25
+      ]
+    },
+    {
+      "segment": "SAC",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "segment": "TXI",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "segment": "SCH",
+      "pages": [
+        31
+      ]
+    },
+    {
+      "segment": "SLN",
+      "pages": [
+        32,
+        33
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        34
+      ]
+    },
+    {
+      "segment": "SE",
+      "pages": [
+        35
+      ]
+    }
+  ]
+}

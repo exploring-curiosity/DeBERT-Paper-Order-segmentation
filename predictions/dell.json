@@ -1,0 +1,69 @@
+{
+  "filename": "dell.pdf",
+  "total_pages": 12,
+  "segment_table_pages": [
+    2
+  ],
+  "segment_pages": [
+    {
+      "segment": "ST",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "segment": "N3",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "segment": "N4",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "segment": "PID",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "segment": "SE",
+      "pages": [
+        12
+      ]
+    }
+  ]
+}

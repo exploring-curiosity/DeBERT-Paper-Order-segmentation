@@ -1,0 +1,160 @@
+{
+  "filename": "d_and_h.pdf",
+  "total_pages": 43,
+  "segment_table_pages": [
+    4
+  ],
+  "segment_pages": [
+    {
+      "segment": "ISA",
+      "pages": [
+        3,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "segment": "DTM",
+      "pages": [
+        5,
+        19,
+        36
+      ]
+    },
+    {
+      "segment": "GS",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "segment": "REF",
+      "pages": [
+        10,
+        13,
+        29,
+        31,
+        35
+      ]
+    },
+    {
+      "segment": "ST",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        14,
+        30
+      ]
+    },
+    {
+      "segment": "FOB",
+      "pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "segment": "ITD",
+      "pages": [
+        17,
+        18
+      ]
+    },
+    {
+      "segment": "TD5",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "segment": "N9",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "segment": "MSG",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "segment": "N2",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "segment": "N3",
+      "pages": [
+        27
+      ]
+    },
+    {
+      "segment": "N4",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        32,
+        33
+      ]
+    },
+    {
+      "segment": "PID",
+      "pages": [
+        34
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        37
+      ]
+    },
+    {
+      "segment": "AMT",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "segment": "SE",
+      "pages": [
+        39
+      ]
+    },
+    {
+      "segment": "GE",
+      "pages": [
+        40
+      ]
+    },
+    {
+      "segment": "IEA",
+      "pages": [
+        41
+      ]
+    }
+  ]
+}

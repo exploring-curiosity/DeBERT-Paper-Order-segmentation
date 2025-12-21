@@ -1,0 +1,113 @@
+{
+  "filename": "coupa.pdf",
+  "total_pages": 33,
+  "segment_table_pages": [
+    4,
+    17
+  ],
+  "segment_pages": [
+    {
+      "segment": "ISA",
+      "pages": [
+        2,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "segment": "GS",
+      "pages": [
+        9,
+        10
+      ]
+    },
+    {
+      "segment": "ST",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "segment": "REF",
+      "pages": [
+        13,
+        14,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "segment": "DTM",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        18,
+        19
+      ]
+    },
+    {
+      "segment": "N3",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "segment": "N4",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "segment": "PID",
+      "pages": [
+        27,
+        28
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "segment": "SE",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "segment": "GE",
+      "pages": [
+        31
+      ]
+    },
+    {
+      "segment": "IEA",
+      "pages": [
+        32
+      ]
+    }
+  ]
+}

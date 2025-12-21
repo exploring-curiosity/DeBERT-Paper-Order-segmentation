@@ -1,0 +1,101 @@
+{
+  "filename": "ti.pdf",
+  "total_pages": 21,
+  "segment_table_pages": [
+    4
+  ],
+  "segment_pages": [
+    {
+      "segment": "ISA",
+      "pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "segment": "GS",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "segment": "ST",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "segment": "TAX",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "segment": "N9",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "segment": "TD5",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "segment": "SCH",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "segment": "SE",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "segment": "GE",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "segment": "IEA",
+      "pages": [
+        21
+      ]
+    }
+  ]
+}

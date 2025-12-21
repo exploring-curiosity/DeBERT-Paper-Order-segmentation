@@ -1,0 +1,107 @@
+{
+  "filename": "ecia.pdf",
+  "total_pages": 23,
+  "segment_table_pages": [
+    2
+  ],
+  "segment_pages": [
+    {
+      "segment": "ST",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "segment": "CUR",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "segment": "TAX",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "segment": "N2",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "segment": "N3",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "segment": "N4",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "segment": "REF",
+      "pages": [
+        12,
+        19
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "segment": "FOB",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "segment": "TD5",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        17,
+        18
+      ]
+    },
+    {
+      "segment": "SCH",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "segment": "SE",
+      "pages": [
+        22
+      ]
+    }
+  ]
+}

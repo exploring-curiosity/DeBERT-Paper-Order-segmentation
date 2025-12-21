@@ -1,0 +1,123 @@
+{
+  "filename": "kroger.pdf",
+  "total_pages": 37,
+  "segment_table_pages": [
+    3,
+    4
+  ],
+  "segment_pages": [
+    {
+      "segment": "BEG",
+      "pages": [
+        2,
+        5
+      ]
+    },
+    {
+      "segment": "CUR",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "segment": "REF",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "segment": "FOB",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "segment": "ITD",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "segment": "DTM",
+      "pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "segment": "TD5",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "segment": "N9",
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        17,
+        20,
+        23,
+        24
+      ]
+    },
+    {
+      "segment": "N3",
+      "pages": [
+        18,
+        21
+      ]
+    },
+    {
+      "segment": "N4",
+      "pages": [
+        19,
+        22
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        25,
+        26
+      ]
+    },
+    {
+      "segment": "PID",
+      "pages": [
+        27,
+        28
+      ]
+    },
+    {
+      "segment": "SAC",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "segment": "AMT",
+      "pages": [
+        31
+      ]
+    }
+  ]
+}

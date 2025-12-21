@@ -1,0 +1,125 @@
+{
+  "filename": "adobe.pdf",
+  "total_pages": 31,
+  "segment_table_pages": [
+    3
+  ],
+  "segment_pages": [
+    {
+      "segment": "ISA",
+      "pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "segment": "GS",
+      "pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "segment": "ST",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "segment": "CUR",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "segment": "REF",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "segment": "DTM",
+      "pages": [
+        13,
+        14,
+        26
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "segment": "N2",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "segment": "N3",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "segment": "N4",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        24,
+        25
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        27
+      ]
+    },
+    {
+      "segment": "AMT",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "segment": "SE",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "segment": "GE",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "segment": "IEA",
+      "pages": [
+        31
+      ]
+    }
+  ]
+}

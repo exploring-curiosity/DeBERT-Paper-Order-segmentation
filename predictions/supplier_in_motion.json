@@ -1,0 +1,109 @@
+{
+  "filename": "supplier_in_motion.pdf",
+  "total_pages": 21,
+  "segment_table_pages": [
+    1
+  ],
+  "segment_pages": [
+    {
+      "segment": "SE",
+      "pages": [
+        2,
+        21
+      ]
+    },
+    {
+      "segment": "ST",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "segment": "REF",
+      "pages": [
+        6,
+        14
+      ]
+    },
+    {
+      "segment": "FOB",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "segment": "TD5",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "segment": "N9",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "segment": "MSG",
+      "pages": [
+        10,
+        19
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "segment": "N3",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "segment": "N4",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "segment": "PID",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "segment": "DTM",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        20
+      ]
+    }
+  ]
+}

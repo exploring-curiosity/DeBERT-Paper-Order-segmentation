@@ -1,0 +1,162 @@
+{
+  "filename": "erico.pdf",
+  "total_pages": 47,
+  "segment_table_pages": [
+    8,
+    28
+  ],
+  "segment_pages": [
+    {
+      "segment": "ISA",
+      "pages": [
+        7,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "segment": "GS",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "segment": "ST",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "segment": "CUR",
+      "pages": [
+        17
+      ]
+    },
+    {
+      "segment": "REF",
+      "pages": [
+        18,
+        33,
+        34
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "segment": "DTM",
+      "pages": [
+        20,
+        37
+      ]
+    },
+    {
+      "segment": "TD5",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "segment": "MAN",
+      "pages": [
+        22,
+        23,
+        38,
+        39
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        24
+      ]
+    },
+    {
+      "segment": "N2",
+      "pages": [
+        25
+      ]
+    },
+    {
+      "segment": "N3",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "segment": "N4",
+      "pages": [
+        27
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "segment": "PID",
+      "pages": [
+        32
+      ]
+    },
+    {
+      "segment": "SAC",
+      "pages": [
+        35,
+        36
+      ]
+    },
+    {
+      "segment": "SCH",
+      "pages": [
+        40,
+        41
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        42
+      ]
+    },
+    {
+      "segment": "AMT",
+      "pages": [
+        43
+      ]
+    },
+    {
+      "segment": "SE",
+      "pages": [
+        44
+      ]
+    },
+    {
+      "segment": "GE",
+      "pages": [
+        45
+      ]
+    },
+    {
+      "segment": "IEA",
+      "pages": [
+        46
+      ]
+    }
+  ]
+}

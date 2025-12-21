@@ -1,0 +1,117 @@
+{
+  "filename": "cardinal_glass_industries.pdf",
+  "total_pages": 31,
+  "segment_table_pages": [
+    3
+  ],
+  "segment_pages": [
+    {
+      "segment": "ISA",
+      "pages": [
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "segment": "REF",
+      "pages": [
+        6,
+        8,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "segment": "GS",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "segment": "ST",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        10,
+        11
+      ]
+    },
+    {
+      "segment": "N9",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "segment": "N3",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "segment": "N4",
+      "pages": [
+        20,
+        21
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        22,
+        24
+      ]
+    },
+    {
+      "segment": "PID",
+      "pages": [
+        25
+      ]
+    },
+    {
+      "segment": "DTM",
+      "pages": [
+        26,
+        27
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        28
+      ]
+    },
+    {
+      "segment": "SE",
+      "pages": [
+        29
+      ]
+    },
+    {
+      "segment": "GE",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "segment": "IEA",
+      "pages": [
+        31
+      ]
+    }
+  ]
+}

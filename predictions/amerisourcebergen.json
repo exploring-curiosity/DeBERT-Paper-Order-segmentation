@@ -1,0 +1,101 @@
+{
+  "filename": "amerisourcebergen.pdf",
+  "total_pages": 25,
+  "segment_table_pages": [
+    1,
+    2
+  ],
+  "segment_pages": [
+    {
+      "segment": "ST",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "segment": "ITD",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "segment": "REF",
+      "pages": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "segment": "DTM",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "segment": "N3",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "segment": "N4",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        16,
+        17
+      ]
+    },
+    {
+      "segment": "PID",
+      "pages": [
+        18,
+        19
+      ]
+    },
+    {
+      "segment": "MSG",
+      "pages": [
+        20,
+        21
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "segment": "SE",
+      "pages": [
+        23
+      ]
+    }
+  ]
+}

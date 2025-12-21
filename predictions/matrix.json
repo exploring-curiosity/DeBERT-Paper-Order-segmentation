@@ -1,0 +1,110 @@
+{
+  "filename": "matrix.pdf",
+  "total_pages": 24,
+  "segment_table_pages": [
+    2
+  ],
+  "segment_pages": [
+    {
+      "segment": "ST",
+      "pages": [
+        3
+      ]
+    },
+    {
+      "segment": "BEG",
+      "pages": [
+        4
+      ]
+    },
+    {
+      "segment": "CUR",
+      "pages": [
+        5,
+        6
+      ]
+    },
+    {
+      "segment": "REF",
+      "pages": [
+        7,
+        8
+      ]
+    },
+    {
+      "segment": "PER",
+      "pages": [
+        9,
+        17
+      ]
+    },
+    {
+      "segment": "SAC",
+      "pages": [
+        10,
+        21
+      ]
+    },
+    {
+      "segment": "ITD",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "segment": "DTM",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        13
+      ]
+    },
+    {
+      "segment": "N2",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "segment": "N3",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "segment": "N4",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "segment": "PO1",
+      "pages": [
+        18,
+        19
+      ]
+    },
+    {
+      "segment": "PID",
+      "pages": [
+        20
+      ]
+    },
+    {
+      "segment": "CTT",
+      "pages": [
+        22
+      ]
+    },
+    {
+      "segment": "SE",
+      "pages": [
+        23
+      ]
+    }
+  ]
+}
