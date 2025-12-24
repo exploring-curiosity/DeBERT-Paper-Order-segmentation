@@ -1,117 +1,53 @@
 {
-  "filename": "cardinal_glass_industries.pdf",
-  "total_pages": 31,
-  "segment_table_pages": [
-    3
-  ],
-  "segment_pages": [
-    {
-      "segment": "ISA",
-      "pages": [
-        2,
-        4,
-        5
-      ]
+  "accuracy": 0.9354838709677419,
+  "macro_f1": 0.8338624338624339,
+  "class_metrics": {
+    "index": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "support": 1
     },
-    {
-      "segment": "REF",
-      "pages": [
-        6,
-        8,
-        13,
-        14,
-        15,
-        16,
-        17
-      ]
+    "segment": {
+      "precision": 0.9565217391304348,
+      "recall": 1.0,
+      "f1": 0.9777777777777777,
+      "support": 22
     },
-    {
-      "segment": "GS",
-      "pages": [
-        7
-      ]
-    },
-    {
-      "segment": "ST",
-      "pages": [
-        9
-      ]
-    },
-    {
-      "segment": "BEG",
-      "pages": [
-        10,
-        11
-      ]
-    },
-    {
-      "segment": "N9",
-      "pages": [
-        12
-      ]
-    },
-    {
-      "segment": "N1",
-      "pages": [
-        18
-      ]
-    },
-    {
-      "segment": "N3",
-      "pages": [
-        19
-      ]
-    },
-    {
-      "segment": "N4",
-      "pages": [
-        20,
-        21
-      ]
-    },
-    {
-      "segment": "PO1",
-      "pages": [
-        22,
-        24
-      ]
-    },
-    {
-      "segment": "PID",
-      "pages": [
-        25
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        26,
-        27
-      ]
-    },
-    {
-      "segment": "CTT",
-      "pages": [
-        28
-      ]
-    },
-    {
-      "segment": "SE",
-      "pages": [
-        29
-      ]
-    },
-    {
-      "segment": "GE",
-      "pages": [
-        30
-      ]
-    },
-    {
-      "segment": "IEA",
-      "pages": [
-        31
-      ]
+    "other": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571,
+      "support": 8
     }
-  ]
+  },
+  "confusion_matrix": {
+    "other": {
+      "index": 1,
+      "other": 6,
+      "segment": 1
+    },
+    "index": {
+      "index": 1
+    },
+    "segment": {
+      "segment": 22
+    }
+  },
+  "errors": [
+    {
+      "page": 1,
+      "predicted": "index",
+      "actual": "other",
+      "confidence": 0.95
+    },
+    {
+      "page": 4,
+      "predicted": "segment",
+      "actual": "other",
+      "confidence": 0.9227347373962402
+    }
+  ],
+  "total_pages": 31,
+  "correct": 29
 }

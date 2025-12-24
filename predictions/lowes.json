@@ -1,118 +1,38 @@
 {
-  "filename": "lowes.pdf",
-  "total_pages": 22,
-  "segment_table_pages": [
-    3
-  ],
-  "segment_pages": [
-    {
-      "segment": "ISA",
-      "pages": [
-        4
-      ]
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "class_metrics": {
+    "index": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2
     },
-    {
-      "segment": "REF",
-      "pages": [
-        5,
-        17
-      ]
+    "segment": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 19
     },
-    {
-      "segment": "GS",
-      "pages": [
-        6
-      ]
-    },
-    {
-      "segment": "ST",
-      "pages": [
-        7
-      ]
-    },
-    {
-      "segment": "BEG",
-      "pages": [
-        8
-      ]
-    },
-    {
-      "segment": "PER",
-      "pages": [
-        9
-      ]
-    },
-    {
-      "segment": "FOB",
-      "pages": [
-        10
-      ]
-    },
-    {
-      "segment": "SAC",
-      "pages": [
-        11
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        12
-      ]
-    },
-    {
-      "segment": "N1",
-      "pages": [
-        13
-      ]
-    },
-    {
-      "segment": "N3",
-      "pages": [
-        14
-      ]
-    },
-    {
-      "segment": "N4",
-      "pages": [
-        15
-      ]
-    },
-    {
-      "segment": "PO1",
-      "pages": [
-        16
-      ]
-    },
-    {
-      "segment": "PID",
-      "pages": [
-        18
-      ]
-    },
-    {
-      "segment": "CTT",
-      "pages": [
-        19
-      ]
-    },
-    {
-      "segment": "SE",
-      "pages": [
-        20
-      ]
-    },
-    {
-      "segment": "GE",
-      "pages": [
-        21
-      ]
-    },
-    {
-      "segment": "IEA",
-      "pages": [
-        22
-      ]
+    "other": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
     }
-  ]
+  },
+  "confusion_matrix": {
+    "other": {
+      "other": 1
+    },
+    "index": {
+      "index": 2
+    },
+    "segment": {
+      "segment": 19
+    }
+  },
+  "errors": [],
+  "total_pages": 22,
+  "correct": 22
 }

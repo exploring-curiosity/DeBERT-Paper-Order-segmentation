@@ -1,158 +1,46 @@
 {
-  "filename": "3m.pdf",
-  "total_pages": 45,
-  "segment_table_pages": [
-    1
-  ],
-  "segment_pages": [
-    {
-      "segment": "TXI",
-      "pages": [
-        2,
-        30
-      ]
+  "accuracy": 0.9777777777777777,
+  "macro_f1": 0.9586339586339586,
+  "class_metrics": {
+    "index": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2
     },
-    {
-      "segment": "ST",
-      "pages": [
-        3
-      ]
+    "segment": {
+      "precision": 0.9743589743589743,
+      "recall": 1.0,
+      "f1": 0.9870129870129869,
+      "support": 38
     },
-    {
-      "segment": "BEG",
-      "pages": [
-        4
-      ]
-    },
-    {
-      "segment": "CUR",
-      "pages": [
-        5
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        6,
-        20,
-        27,
-        35
-      ]
-    },
-    {
-      "segment": "PER",
-      "pages": [
-        7,
-        21
-      ]
-    },
-    {
-      "segment": "FOB",
-      "pages": [
-        8,
-        9,
-        10
-      ]
-    },
-    {
-      "segment": "ITD",
-      "pages": [
-        11
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        12,
-        28
-      ]
-    },
-    {
-      "segment": "TD5",
-      "pages": [
-        13
-      ]
-    },
-    {
-      "segment": "N9",
-      "pages": [
-        14
-      ]
-    },
-    {
-      "segment": "MSG",
-      "pages": [
-        15,
-        29
-      ]
-    },
-    {
-      "segment": "N1",
-      "pages": [
-        16,
-        31
-      ]
-    },
-    {
-      "segment": "N2",
-      "pages": [
-        17,
-        32
-      ]
-    },
-    {
-      "segment": "N3",
-      "pages": [
-        18,
-        33
-      ]
-    },
-    {
-      "segment": "N4",
-      "pages": [
-        19,
-        34
-      ]
-    },
-    {
-      "segment": "PO1",
-      "pages": [
-        22,
-        23
-      ]
-    },
-    {
-      "segment": "CTP",
-      "pages": [
-        24,
-        25
-      ]
-    },
-    {
-      "segment": "PID",
-      "pages": [
-        26,
-        38
-      ]
-    },
-    {
-      "segment": "SLN",
-      "pages": [
-        36,
-        37
-      ]
-    },
-    {
-      "segment": "CTT",
-      "pages": [
-        39
-      ]
-    },
-    {
-      "segment": "SE",
-      "pages": [
-        40
-      ]
+    "other": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.888888888888889,
+      "support": 5
     }
-  ]
+  },
+  "confusion_matrix": {
+    "index": {
+      "index": 2
+    },
+    "segment": {
+      "segment": 38
+    },
+    "other": {
+      "other": 4,
+      "segment": 1
+    }
+  },
+  "errors": [
+    {
+      "page": 43,
+      "predicted": "segment",
+      "actual": "other",
+      "confidence": 0.8
+    }
+  ],
+  "total_pages": 45,
+  "correct": 44
 }

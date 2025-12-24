@@ -6,15 +6,10 @@
     2,
     3,
     4,
-    5
+    5,
+    6
   ],
   "segment_pages": [
-    {
-      "segment": "AMT",
-      "pages": [
-        6
-      ]
-    },
     {
       "segment": "ST",
       "pages": [
@@ -30,15 +25,13 @@
     {
       "segment": "REF",
       "pages": [
-        9,
-        21
+        9
       ]
     },
     {
       "segment": "FOB",
       "pages": [
-        10,
-        23
+        10
       ]
     },
     {
@@ -50,31 +43,32 @@
     {
       "segment": "DTM",
       "pages": [
-        12,
-        14,
-        31
+        12
       ]
     },
     {
       "segment": "N9",
       "pages": [
-        13,
-        30
+        13
+      ]
+    },
+    {
+      "segment": "DTM",
+      "pages": [
+        14
       ]
     },
     {
       "segment": "MSG",
       "pages": [
-        15,
-        32
+        15
       ]
     },
     {
       "segment": "N1",
       "pages": [
         16,
-        17,
-        33
+        17
       ]
     },
     {
@@ -96,9 +90,21 @@
       ]
     },
     {
+      "segment": "REF",
+      "pages": [
+        21
+      ]
+    },
+    {
       "segment": "PER",
       "pages": [
         22
+      ]
+    },
+    {
+      "segment": "FOB",
+      "pages": [
+        23
       ]
     },
     {
@@ -123,6 +129,30 @@
       ]
     },
     {
+      "segment": "N9",
+      "pages": [
+        30
+      ]
+    },
+    {
+      "segment": "DTM",
+      "pages": [
+        31
+      ]
+    },
+    {
+      "segment": "MSG",
+      "pages": [
+        32
+      ]
+    },
+    {
+      "segment": "N1",
+      "pages": [
+        33
+      ]
+    },
+    {
       "segment": "CTT",
       "pages": [
         34
@@ -134,5 +164,6 @@
         35
       ]
     }
-  ]
+  ],
+  "other_pages": []
 }

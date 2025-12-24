@@ -264,6 +264,10 @@ def detect_appendix_page(text: str) -> bool:
     if re.search(r"Country\s+Specific\s+Requirements", text, re.IGNORECASE):
         return True
     
+    # Revision History page (metadata, not segment)
+    if re.search(r"Revision\s+History", text, re.IGNORECASE):
+        return True
+    
     return False
 
 

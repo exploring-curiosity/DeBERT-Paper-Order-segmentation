@@ -1,77 +1,38 @@
 {
-  "filename": "volvo.pdf",
-  "total_pages": 18,
-  "segment_table_pages": [
-    3
-  ],
-  "segment_pages": [
-    {
-      "segment": "ST",
-      "pages": [
-        4
-      ]
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "class_metrics": {
+    "index": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
     },
-    {
-      "segment": "BEG",
-      "pages": [
-        5
-      ]
+    "segment": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 13
     },
-    {
-      "segment": "CUR",
-      "pages": [
-        6
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        7
-      ]
-    },
-    {
-      "segment": "N1",
-      "pages": [
-        8
-      ]
-    },
-    {
-      "segment": "N3",
-      "pages": [
-        9
-      ]
-    },
-    {
-      "segment": "N4",
-      "pages": [
-        10
-      ]
-    },
-    {
-      "segment": "PO1",
-      "pages": [
-        11,
-        12,
-        13
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        14
-      ]
-    },
-    {
-      "segment": "CTT",
-      "pages": [
-        15
-      ]
-    },
-    {
-      "segment": "SE",
-      "pages": [
-        16
-      ]
+    "other": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 4
     }
-  ]
+  },
+  "confusion_matrix": {
+    "other": {
+      "other": 4
+    },
+    "index": {
+      "index": 1
+    },
+    "segment": {
+      "segment": 13
+    }
+  },
+  "errors": [],
+  "total_pages": 18,
+  "correct": 18
 }

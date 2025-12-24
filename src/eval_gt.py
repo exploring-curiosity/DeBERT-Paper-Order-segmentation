@@ -10,9 +10,11 @@ from dataclasses import dataclass
 from collections import defaultdict
 import logging
 
-from .ingestion import ingest_pdf
-from .model import PageClassifier, get_tokenizer
-from .labeling import LABELS, LABEL_NAMES
+from .pdf_parser import parse_pdf
+from transformers import AutoTokenizer
+
+LABELS = ["index", "segment", "other"]
+LABEL_NAMES = {0: "index", 1: "segment", 2: "other"}
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -192,24 +194,30 @@ def apply_hybrid_rules(text: str, pred_label: str, confidence: float, probs) -> 
 
 def run_inference(
     pdf_path: str,
-    model: PageClassifier,
+    model,
     tokenizer,
-    device: str = "cuda"
+    device: str = "cuda",
+    use_classifier_head: bool = False,
+    encoder=None
 ) -> List[Dict]:
     """
-    Run inference on a PDF and return predictions.
+    Run ML model inference with document-level hybrid rules.
+    Uses label_document for comprehensive rule-based predictions,
+    then ML model can correct low-confidence cases.
     """
     import torch
+    from src.labeling_rules import label_document
     
-    # Ingest PDF
-    pages = ingest_pdf(pdf_path, use_ocr=False)
+    # Get rule-based predictions (document-level context)
+    rule_results = label_document(pdf_path)
     
-    predictions = []
+    # Get ML predictions for potential corrections
+    pages = parse_pdf(pdf_path)
+    ml_predictions = []
     
     model.eval()
     with torch.no_grad():
         for page in pages:
-            # Tokenize
             encoding = tokenizer(
                 page.text,
                 truncation=True,
@@ -221,17 +229,43 @@ def run_inference(
             input_ids = encoding["input_ids"].to(device)
             attention_mask = encoding["attention_mask"].to(device)
             
-            # Predict
-            preds, probs = model.predict(input_ids, attention_mask)
+            if use_classifier_head:
+                encoder_out = encoder(input_ids=input_ids, attention_mask=attention_mask)
+                embeddings = encoder_out.last_hidden_state[:, 0, :]
+                logits = model(embeddings)
+                probs = torch.softmax(logits, dim=-1)
+                preds = torch.argmax(probs, dim=-1)
+            else:
+                preds, probs = model.predict(input_ids, attention_mask)
             
-            pred_label = LABEL_NAMES[preds[0].item()]
-            confidence = probs[0][preds[0]].item()
-            
-            predictions.append({
-                "page_number": page.page_number + 1,  # Convert to 1-indexed
-                "label": pred_label,
-                "confidence": confidence
+            ml_predictions.append({
+                "label": LABEL_NAMES[preds[0].item()],
+                "confidence": probs[0][preds[0]].item()
             })
+    
+    # Combine: Use rules as primary, ML corrects low-confidence rule predictions
+    predictions = []
+    for i, rule_result in enumerate(rule_results):
+        ml_pred = ml_predictions[i] if i < len(ml_predictions) else None
+        
+        # Hybrid logic: Trust rules unless they're uncertain AND ML is very confident
+        if rule_result.confidence >= 0.75:
+            final_label = rule_result.label
+            final_conf = rule_result.confidence
+        elif ml_pred and ml_pred["confidence"] >= 0.90:
+            # Low rule confidence, high ML confidence - use ML
+            final_label = ml_pred["label"]
+            final_conf = ml_pred["confidence"]
+        else:
+            # Default to rules
+            final_label = rule_result.label
+            final_conf = rule_result.confidence
+        
+        predictions.append({
+            "page_number": i + 1,
+            "label": final_label,
+            "confidence": final_conf
+        })
     
     return predictions
 
@@ -257,13 +291,22 @@ def evaluate_model_on_corpus(
     import torch
     
     # Load model
-    model = PageClassifier.load(model_path, device=device)
-    model.to(device)
+    from src.model import load_classifier
+    from transformers import AutoModel
+    
+    model = load_classifier(model_path, device=device)
     model.eval()
     
+    # Load encoder for embeddings
+    encoder = AutoModel.from_pretrained("microsoft/deberta-v3-base")
+    encoder.to(device)
+    encoder.eval()
+    
+    use_classifier_head = True
+    logger.info(f"Loaded {model.mode} classifier")
+    
     # Load tokenizer
-    tokenizer_path = Path(model_path).parent / "tokenizer"
-    tokenizer = get_tokenizer(str(tokenizer_path) if tokenizer_path.exists() else None)
+    tokenizer = AutoTokenizer.from_pretrained("microsoft/deberta-v3-base")
     
     # Load ground truth
     ground_truths = load_ground_truth(gt_dir)
@@ -295,7 +338,10 @@ def evaluate_model_on_corpus(
         logger.info(f"Evaluating {doc_name}...")
         
         # Run inference
-        predictions = run_inference(str(pdf_file), model, tokenizer, device)
+        predictions = run_inference(
+            str(pdf_file), model, tokenizer, device,
+            use_classifier_head=use_classifier_head, encoder=encoder
+        )
         
         # Evaluate
         result = evaluate_predictions(predictions, gt)
@@ -355,10 +401,45 @@ def print_evaluation_report(results: Dict):
                   f"R={metrics['recall']:.3f}, F1={metrics['f1']:.3f} "
                   f"(n={metrics['support']})")
         
-        if doc_result["errors"]:
-            print(f"  Errors ({len(doc_result['errors'])}):")
-            for err in doc_result["errors"][:5]:  # Show first 5 errors
-                print(f"    Page {err['page']}: predicted={err['predicted']}, "
-                      f"actual={err['actual']} (conf={err['confidence']:.2f})")
-            if len(doc_result["errors"]) > 5:
-                print(f"    ... and {len(doc_result['errors']) - 5} more errors")
+    # Collect all misclassified pages
+    all_errors = []
+    for doc_name, doc_result in results["per_document"].items():
+        for err in doc_result.get("errors", []):
+            all_errors.append({
+                "document": doc_name,
+                "page": err["page"],
+                "predicted": err["predicted"],
+                "actual": err["actual"],
+                "confidence": err.get("confidence", 0.0)
+            })
+    
+    # Print misclassified pages summary
+    if all_errors:
+        print("\n" + "=" * 70)
+        print(f"MISCLASSIFIED PAGES ({len(all_errors)} total)")
+        print("=" * 70)
+        print(f"{'Document':<35} {'Page':>5} {'Predicted':<10} {'Actual':<10} {'Conf':>6}")
+        print("-" * 70)
+        
+        # Sort by document name, then page number
+        all_errors.sort(key=lambda x: (x["document"], x["page"]))
+        
+        for err in all_errors:
+            print(f"{err['document']:<35} {err['page']:>5} {err['predicted']:<10} {err['actual']:<10} {err['confidence']:>6.2f}")
+        
+        print("-" * 70)
+        print(f"Total misclassified: {len(all_errors)} pages")
+        
+        # Group by error type
+        error_types = {}
+        for err in all_errors:
+            key = f"{err['actual']} → {err['predicted']}"
+            error_types[key] = error_types.get(key, 0) + 1
+        
+        print("\nError breakdown by type:")
+        for error_type, count in sorted(error_types.items(), key=lambda x: -x[1]):
+            print(f"  {error_type}: {count}")
+    else:
+        print("\n" + "=" * 70)
+        print("NO MISCLASSIFIED PAGES - 100% accuracy!")
+        print("=" * 70)

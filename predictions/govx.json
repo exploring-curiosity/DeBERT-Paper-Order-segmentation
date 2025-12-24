@@ -1,100 +1,38 @@
 {
-  "filename": "govx.pdf",
-  "total_pages": 20,
-  "segment_table_pages": [
-    3
-  ],
-  "segment_pages": [
-    {
-      "segment": "ISA",
-      "pages": [
-        2,
-        5
-      ]
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "class_metrics": {
+    "index": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2
     },
-    {
-      "segment": "GS",
-      "pages": [
-        6
-      ]
+    "segment": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 15
     },
-    {
-      "segment": "ST",
-      "pages": [
-        7
-      ]
-    },
-    {
-      "segment": "BEG",
-      "pages": [
-        8
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        9
-      ]
-    },
-    {
-      "segment": "TD5",
-      "pages": [
-        10
-      ]
-    },
-    {
-      "segment": "N1",
-      "pages": [
-        11
-      ]
-    },
-    {
-      "segment": "N2",
-      "pages": [
-        12
-      ]
-    },
-    {
-      "segment": "N3",
-      "pages": [
-        13
-      ]
-    },
-    {
-      "segment": "N4",
-      "pages": [
-        14
-      ]
-    },
-    {
-      "segment": "PO1",
-      "pages": [
-        15
-      ]
-    },
-    {
-      "segment": "PID",
-      "pages": [
-        16
-      ]
-    },
-    {
-      "segment": "SE",
-      "pages": [
-        17
-      ]
-    },
-    {
-      "segment": "GE",
-      "pages": [
-        18
-      ]
-    },
-    {
-      "segment": "IEA",
-      "pages": [
-        19
-      ]
+    "other": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
     }
-  ]
+  },
+  "confusion_matrix": {
+    "other": {
+      "other": 3
+    },
+    "index": {
+      "index": 2
+    },
+    "segment": {
+      "segment": 15
+    }
+  },
+  "errors": [],
+  "total_pages": 20,
+  "correct": 20
 }

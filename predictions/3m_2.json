@@ -1,182 +1,38 @@
 {
-  "filename": "3m_2.pdf",
-  "total_pages": 44,
-  "segment_table_pages": [
-    2
-  ],
-  "segment_pages": [
-    {
-      "segment": "SCH",
-      "pages": [
-        3,
-        37
-      ]
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "class_metrics": {
+    "index": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2
     },
-    {
-      "segment": "ISA",
-      "pages": [
-        4,
-        5
-      ]
+    "segment": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 38
     },
-    {
-      "segment": "GS",
-      "pages": [
-        6
-      ]
-    },
-    {
-      "segment": "ST",
-      "pages": [
-        7
-      ]
-    },
-    {
-      "segment": "BEG",
-      "pages": [
-        8
-      ]
-    },
-    {
-      "segment": "CUR",
-      "pages": [
-        9
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        10,
-        27
-      ]
-    },
-    {
-      "segment": "PER",
-      "pages": [
-        11,
-        28
-      ]
-    },
-    {
-      "segment": "TAX",
-      "pages": [
-        12
-      ]
-    },
-    {
-      "segment": "FOB",
-      "pages": [
-        14
-      ]
-    },
-    {
-      "segment": "SAC",
-      "pages": [
-        15,
-        34
-      ]
-    },
-    {
-      "segment": "ITD",
-      "pages": [
-        16,
-        17
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        18
-      ]
-    },
-    {
-      "segment": "TD5",
-      "pages": [
-        19,
-        20,
-        35,
-        36
-      ]
-    },
-    {
-      "segment": "N9",
-      "pages": [
-        21
-      ]
-    },
-    {
-      "segment": "MSG",
-      "pages": [
-        22
-      ]
-    },
-    {
-      "segment": "N1",
-      "pages": [
-        23
-      ]
-    },
-    {
-      "segment": "N2",
-      "pages": [
-        24
-      ]
-    },
-    {
-      "segment": "N3",
-      "pages": [
-        25
-      ]
-    },
-    {
-      "segment": "N4",
-      "pages": [
-        26
-      ]
-    },
-    {
-      "segment": "PO1",
-      "pages": [
-        29,
-        30,
-        31
-      ]
-    },
-    {
-      "segment": "CTP",
-      "pages": [
-        32
-      ]
-    },
-    {
-      "segment": "PID",
-      "pages": [
-        33
-      ]
-    },
-    {
-      "segment": "CTT",
-      "pages": [
-        38
-      ]
-    },
-    {
-      "segment": "SE",
-      "pages": [
-        39
-      ]
-    },
-    {
-      "segment": "GE",
-      "pages": [
-        40
-      ]
-    },
-    {
-      "segment": "IEA",
-      "pages": [
-        41
-      ]
+    "other": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 4
     }
-  ]
+  },
+  "confusion_matrix": {
+    "other": {
+      "other": 4
+    },
+    "index": {
+      "index": 2
+    },
+    "segment": {
+      "segment": 38
+    }
+  },
+  "errors": [],
+  "total_pages": 44,
+  "correct": 44
 }

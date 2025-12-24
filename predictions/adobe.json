@@ -1,125 +1,46 @@
 {
-  "filename": "adobe.pdf",
-  "total_pages": 31,
-  "segment_table_pages": [
-    3
-  ],
-  "segment_pages": [
-    {
-      "segment": "ISA",
-      "pages": [
-        5,
-        6
-      ]
+  "accuracy": 0.967741935483871,
+  "macro_f1": 0.9270440251572327,
+  "class_metrics": {
+    "index": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2
     },
-    {
-      "segment": "GS",
-      "pages": [
-        7,
-        8
-      ]
+    "segment": {
+      "precision": 1.0,
+      "recall": 0.9629629629629629,
+      "f1": 0.9811320754716981,
+      "support": 27
     },
-    {
-      "segment": "ST",
-      "pages": [
-        9
-      ]
-    },
-    {
-      "segment": "BEG",
-      "pages": [
-        10
-      ]
-    },
-    {
-      "segment": "CUR",
-      "pages": [
-        11
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        12
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        13,
-        14,
-        26
-      ]
-    },
-    {
-      "segment": "N1",
-      "pages": [
-        15,
-        16,
-        17,
-        18
-      ]
-    },
-    {
-      "segment": "N2",
-      "pages": [
-        19
-      ]
-    },
-    {
-      "segment": "N3",
-      "pages": [
-        20
-      ]
-    },
-    {
-      "segment": "N4",
-      "pages": [
-        21
-      ]
-    },
-    {
-      "segment": "PER",
-      "pages": [
-        22
-      ]
-    },
-    {
-      "segment": "PO1",
-      "pages": [
-        24,
-        25
-      ]
-    },
-    {
-      "segment": "CTT",
-      "pages": [
-        27
-      ]
-    },
-    {
-      "segment": "AMT",
-      "pages": [
-        28
-      ]
-    },
-    {
-      "segment": "SE",
-      "pages": [
-        29
-      ]
-    },
-    {
-      "segment": "GE",
-      "pages": [
-        30
-      ]
-    },
-    {
-      "segment": "IEA",
-      "pages": [
-        31
-      ]
+    "other": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1": 0.8,
+      "support": 2
     }
-  ]
+  },
+  "confusion_matrix": {
+    "other": {
+      "other": 2
+    },
+    "index": {
+      "index": 2
+    },
+    "segment": {
+      "segment": 26,
+      "other": 1
+    }
+  },
+  "errors": [
+    {
+      "page": 11,
+      "predicted": "other",
+      "actual": "segment",
+      "confidence": 0.95
+    }
+  ],
+  "total_pages": 31,
+  "correct": 30
 }

@@ -1,3 +1,30 @@
-/models
-**__pycache__**
-/data
+# Models (large files)
+/models/
+
+# Data (PDFs, embeddings, etc)
+/data/
+
+# Keep predictions in git
+!/predictions/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# MLflow
+/mlruns/
+mlflow.db
+
+# Ray
+/ray_results/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
