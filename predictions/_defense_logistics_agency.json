@@ -1,800 +1,405 @@
 {
-  "filename": "_defense_logistics_agency.pdf",
-  "total_pages": 240,
-  "segment_table_pages": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6
-  ],
-  "segment_pages": [
-    {
-      "segment": "ST",
-      "pages": [
-        7
-      ]
-    },
-    {
-      "segment": "BEG",
-      "pages": [
-        8,
-        9,
-        10,
-        11
-      ]
-    },
-    {
-      "segment": "CUR",
-      "pages": [
-        12,
-        13,
-        14
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        15,
-        16,
-        17,
-        18
-      ]
-    },
-    {
-      "segment": "FOB",
-      "pages": [
-        19,
-        20,
-        21
-      ]
-    },
-    {
-      "segment": "CSH",
-      "pages": [
-        22,
-        23
-      ]
-    },
-    {
-      "segment": "SAC",
-      "pages": [
-        24,
-        25,
-        26,
-        27,
-        28,
-        29
-      ]
-    },
-    {
-      "segment": "ITD",
-      "pages": [
-        30,
-        31
-      ]
-    },
-    {
-      "segment": "INC",
-      "pages": [
-        32,
-        33
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        34,
-        35,
-        36
-      ]
-    },
-    {
-      "segment": "LDT",
-      "pages": [
-        37,
-        38
-      ]
-    },
-    {
-      "segment": "PID",
-      "pages": [
-        39,
-        40
-      ]
-    },
-    {
-      "segment": "MEA",
-      "pages": [
-        41,
-        42,
-        43,
-        44,
-        45
-      ]
-    },
-    {
-      "segment": "PWK",
-      "pages": [
-        46,
-        47
-      ]
-    },
-    {
-      "segment": "PKG",
-      "pages": [
-        50,
-        51
-      ]
-    },
-    {
-      "segment": "TD5",
-      "pages": [
-        52,
-        53
-      ]
-    },
-    {
-      "segment": "TD4",
-      "pages": [
-        54
-      ]
-    },
-    {
-      "segment": "MAN",
-      "pages": [
-        55
-      ]
-    },
-    {
-      "segment": "PCT",
-      "pages": [
-        56
-      ]
-    },
-    {
-      "segment": "TXI",
-      "pages": [
-        57,
-        58
-      ]
-    },
-    {
-      "segment": "AMT",
-      "pages": [
-        59,
-        60
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        61
-      ]
-    },
-    {
-      "segment": "FA1",
-      "pages": [
-        62
-      ]
-    },
-    {
-      "segment": "FA2",
-      "pages": [
-        63,
+    "filename": "_defense_logistics_agency.pdf",
+    "total_pages": 240,
+    "segment_table_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+    ],
+    "segment_pages": [
+        {
+            "segment": "ST",
+            "pages": [
+                7
+            ]
+        },
+        {
+            "segment": "BEG",
+            "pages": [
+                8,
+                9,
+                10,
+                11
+            ]
+        },
+        {
+            "segment": "CUR",
+            "pages": [
+                12,
+                13,
+                14,
+                119,
+                120,
+                121,
+                122,
+                123
+            ]
+        },
+        {
+            "segment": "REF",
+            "pages": [
+                15,
+                16,
+                17,
+                18,
+                61,
+                62,
+                63,
+                82,
+                83,
+                91,
+                104,
+                105,
+                144,
+                145,
+                146,
+                147,
+                188,
+                189,
+                208,
+                209,
+                228,
+                229,
+                233,
+                234
+            ]
+        },
+        {
+            "segment": "FOB",
+            "pages": [
+                19,
+                20,
+                21,
+                161,
+                162,
+                163
+            ]
+        },
+        {
+            "segment": "CSH",
+            "pages": [
+                22,
+                23,
+                157,
+                158
+            ]
+        },
+        {
+            "segment": "SAC",
+            "pages": [
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156
+            ]
+        },
+        {
+            "segment": "ITD",
+            "pages": [
+                30,
+                31
+            ]
+        },
+        {
+            "segment": "INC",
+            "pages": [
+                32,
+                33,
+                159,
+                160
+            ]
+        },
+        {
+            "segment": "DTM",
+            "pages": [
+                34,
+                35,
+                36,
+                37,
+                38,
+                70,
+                92,
+                106,
+                107,
+                164,
+                165,
+                166
+            ]
+        },
+        {
+            "segment": "PID",
+            "pages": [
+                39,
+                40,
+                135,
+                136
+            ]
+        },
+        {
+            "segment": "MEA",
+            "pages": [
+                41,
+                42,
+                43,
+                44,
+                45,
+                130,
+                131,
+                132,
+                133,
+                134
+            ]
+        },
+        {
+            "segment": "PWK",
+            "pages": [
+                46,
+                47,
+                48,
+                49,
+                137,
+                138,
+                139,
+                140
+            ]
+        },
+        {
+            "segment": "PKG",
+            "pages": [
+                50,
+                51,
+                180,
+                181,
+                182,
+                183,
+                184,
+                185,
+                186,
+                219,
+                220,
+                221,
+                222
+            ]
+        },
+        {
+            "segment": "TD5",
+            "pages": [
+                52,
+                53,
+                167,
+                168,
+                216,
+                217
+            ]
+        },
+        {
+            "segment": "TD4",
+            "pages": [
+                54,
+                169,
+                218
+            ]
+        },
+        {
+            "segment": "MAN",
+            "pages": [
+                55,
+                171,
+                223,
+                224,
+                225,
+                226
+            ]
+        },
+        {
+            "segment": "PCT",
+            "pages": [
+                56,
+                170,
+                235,
+                236,
+                237
+            ]
+        },
+        {
+            "segment": "TXI",
+            "pages": [
+                57,
+                58,
+                175,
+                176
+            ]
+        },
+        {
+            "segment": "AMT",
+            "pages": [
+                59,
+                60,
+                230,
+                231,
+                232,
+                239
+            ]
+        },
+        {
+            "segment": "UNKNOWN",
+            "pages": [
+                66,
+                78,
+                79,
+                80,
+                81,
+                96,
+                97,
+                98,
+                99,
+                112,
+                113,
+                116,
+                117,
+                118,
+                190,
+                191,
+                192,
+                193,
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207
+            ]
+        },
+        {
+            "segment": "MSG",
+            "pages": [
+                71,
+                72,
+                73,
+                74,
+                75,
+                93,
+                94,
+                95,
+                100,
+                101,
+                108,
+                172,
+                173,
+                174,
+                187,
+                197,
+                198,
+                227
+            ]
+        },
+        {
+            "segment": "PER",
+            "pages": [
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                148,
+                149,
+                150,
+                210,
+                211,
+                212
+            ]
+        },
+        {
+            "segment": "PO1",
+            "pages": [
+                109,
+                110,
+                111
+            ]
+        },
+        {
+            "segment": "LIN",
+            "pages": [
+                114,
+                115
+            ]
+        },
+        {
+            "segment": "PO3",
+            "pages": [
+                124,
+                125
+            ]
+        },
+        {
+            "segment": "CTP",
+            "pages": [
+                126,
+                127,
+                128,
+                129
+            ]
+        },
+        {
+            "segment": "PO4",
+            "pages": [
+                141,
+                142,
+                143
+            ]
+        },
+        {
+            "segment": "SCH",
+            "pages": [
+                177,
+                178,
+                179,
+                213,
+                214,
+                215
+            ]
+        },
+        {
+            "segment": "CTT",
+            "pages": [
+                238
+            ]
+        },
+        {
+            "segment": "SE",
+            "pages": [
+                240
+            ]
+        }
+    ],
+    "other_pages": [
         64,
-        65
-      ]
-    },
-    {
-      "segment": "N9",
-      "pages": [
-        66,
+        65,
         67,
         68,
-        69
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        70
-      ]
-    },
-    {
-      "segment": "MSG",
-      "pages": [
-        71,
-        72
-      ]
-    },
-    {
-      "segment": "N1",
-      "pages": [
-        73
-      ]
-    },
-    {
-      "segment": "N2",
-      "pages": [
-        78
-      ]
-    },
-    {
-      "segment": "N3",
-      "pages": [
-        79
-      ]
-    },
-    {
-      "segment": "N4",
-      "pages": [
-        80,
-        81
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        82,
-        83
-      ]
-    },
-    {
-      "segment": "PER",
-      "pages": [
-        84
-      ]
-    },
-    {
-      "segment": "LM",
-      "pages": [
-        87
-      ]
-    },
-    {
-      "segment": "LQ",
-      "pages": [
-        88
-      ]
-    },
-    {
-      "segment": "SPI",
-      "pages": [
-        89,
-        90
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        91
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        92
-      ]
-    },
-    {
-      "segment": "MSG",
-      "pages": [
-        93
-      ]
-    },
-    {
-      "segment": "N1",
-      "pages": [
-        94,
-        95
-      ]
-    },
-    {
-      "segment": "N2",
-      "pages": [
-        96
-      ]
-    },
-    {
-      "segment": "N3",
-      "pages": [
-        97
-      ]
-    },
-    {
-      "segment": "N4",
-      "pages": [
-        98
-      ]
-    },
-    {
-      "segment": "G61",
-      "pages": [
-        99
-      ]
-    },
-    {
-      "segment": "MSG",
-      "pages": [
-        100
-      ]
-    },
-    {
-      "segment": "CB1",
-      "pages": [
-        101,
+        69,
+        76,
+        77,
+        90,
         102,
-        103
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        104,
-        105
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        106
-      ]
-    },
-    {
-      "segment": "LDT",
-      "pages": [
-        107
-      ]
-    },
-    {
-      "segment": "MSG",
-      "pages": [
-        108
-      ]
-    },
-    {
-      "segment": "PO1",
-      "pages": [
-        109,
-        110,
-        111,
-        112,
-        113
-      ]
-    },
-    {
-      "segment": "LIN",
-      "pages": [
-        114,
-        115,
-        116,
-        117,
-        118
-      ]
-    },
-    {
-      "segment": "CUR",
-      "pages": [
-        119,
-        120,
-        121
-      ]
-    },
-    {
-      "segment": "CN1",
-      "pages": [
-        122,
-        123
-      ]
-    },
-    {
-      "segment": "PO3",
-      "pages": [
-        124,
-        125
-      ]
-    },
-    {
-      "segment": "CTP",
-      "pages": [
-        126,
-        127,
-        128,
-        129
-      ]
-    },
-    {
-      "segment": "MEA",
-      "pages": [
-        130,
-        131,
-        132,
-        133,
-        134
-      ]
-    },
-    {
-      "segment": "PID",
-      "pages": [
-        135,
-        136
-      ]
-    },
-    {
-      "segment": "PWK",
-      "pages": [
-        137
-      ]
-    },
-    {
-      "segment": "PO4",
-      "pages": [
-        141,
-        142,
-        143
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        144
-      ]
-    },
-    {
-      "segment": "PER",
-      "pages": [
-        148,
-        149,
-        150
-      ]
-    },
-    {
-      "segment": "SAC",
-      "pages": [
-        151,
-        152,
-        153,
-        154,
-        155,
-        156
-      ]
-    },
-    {
-      "segment": "CSH",
-      "pages": [
-        157,
-        158
-      ]
-    },
-    {
-      "segment": "INC",
-      "pages": [
-        159,
-        160
-      ]
-    },
-    {
-      "segment": "FOB",
-      "pages": [
-        161,
-        162,
-        163
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        164,
-        165,
-        166
-      ]
-    },
-    {
-      "segment": "TD5",
-      "pages": [
-        167,
-        168
-      ]
-    },
-    {
-      "segment": "TD4",
-      "pages": [
-        169
-      ]
-    },
-    {
-      "segment": "PCT",
-      "pages": [
-        170
-      ]
-    },
-    {
-      "segment": "MAN",
-      "pages": [
-        171
-      ]
-    },
-    {
-      "segment": "MSG",
-      "pages": [
-        172
-      ]
-    },
-    {
-      "segment": "SPI",
-      "pages": [
-        173,
-        174
-      ]
-    },
-    {
-      "segment": "TXI",
-      "pages": [
-        175,
-        176
-      ]
-    },
-    {
-      "segment": "SCH",
-      "pages": [
-        177,
-        178,
-        179
-      ]
-    },
-    {
-      "segment": "PKG",
-      "pages": [
-        180,
-        181
-      ]
-    },
-    {
-      "segment": "LS",
-      "pages": [
-        182
-      ]
-    },
-    {
-      "segment": "LDT",
-      "pages": [
-        183,
-        184
-      ]
-    },
-    {
-      "segment": "QTY",
-      "pages": [
-        185,
-        186
-      ]
-    },
-    {
-      "segment": "MSG",
-      "pages": [
-        187
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        188,
-        189
-      ]
-    },
-    {
-      "segment": "LM",
-      "pages": [
-        190
-      ]
-    },
-    {
-      "segment": "LQ",
-      "pages": [
-        191
-      ]
-    },
-    {
-      "segment": "LE",
-      "pages": [
-        192
-      ]
-    },
-    {
-      "segment": "N9",
-      "pages": [
-        193,
+        103,
         194,
         195,
         196
-      ]
-    },
-    {
-      "segment": "MSG",
-      "pages": [
-        197,
-        198
-      ]
-    },
-    {
-      "segment": "N1",
-      "pages": [
-        199
-      ]
-    },
-    {
-      "segment": "N2",
-      "pages": [
-        203
-      ]
-    },
-    {
-      "segment": "N3",
-      "pages": [
-        204
-      ]
-    },
-    {
-      "segment": "N4",
-      "pages": [
-        205
-      ]
-    },
-    {
-      "segment": "QTY",
-      "pages": [
-        206,
-        207
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        208,
-        209
-      ]
-    },
-    {
-      "segment": "PER",
-      "pages": [
-        210,
-        211,
-        212
-      ]
-    },
-    {
-      "segment": "SCH",
-      "pages": [
-        213,
-        214,
-        215
-      ]
-    },
-    {
-      "segment": "TD5",
-      "pages": [
-        216,
-        217
-      ]
-    },
-    {
-      "segment": "TD4",
-      "pages": [
-        218
-      ]
-    },
-    {
-      "segment": "PKG",
-      "pages": [
-        219,
-        220
-      ]
-    },
-    {
-      "segment": "LDT",
-      "pages": [
-        221,
-        222
-      ]
-    },
-    {
-      "segment": "MAN",
-      "pages": [
-        223
-      ]
-    },
-    {
-      "segment": "QTY",
-      "pages": [
-        224,
-        225,
-        226
-      ]
-    },
-    {
-      "segment": "MSG",
-      "pages": [
-        227
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        228,
-        229
-      ]
-    },
-    {
-      "segment": "AMT",
-      "pages": [
-        230,
-        231,
-        232
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        233,
-        234
-      ]
-    },
-    {
-      "segment": "PCT",
-      "pages": [
-        235
-      ]
-    },
-    {
-      "segment": "LM",
-      "pages": [
-        236
-      ]
-    },
-    {
-      "segment": "LQ",
-      "pages": [
-        237
-      ]
-    },
-    {
-      "segment": "CTT",
-      "pages": [
-        238
-      ]
-    },
-    {
-      "segment": "AMT",
-      "pages": [
-        239
-      ]
-    },
-    {
-      "segment": "SE",
-      "pages": [
-        240
-      ]
-    }
-  ],
-  "other_pages": [
-    48,
-    49,
-    74,
-    75,
-    76,
-    77,
-    85,
-    86,
-    138,
-    139,
-    140,
-    145,
-    146,
-    147,
-    200,
-    201,
-    202
-  ]
+    ]
 }

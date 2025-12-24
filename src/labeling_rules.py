@@ -90,6 +90,41 @@ def has_element_definition_structure(text: str) -> bool:
     return indicators >= 2
 
 
+def has_segment_label_header(text: str) -> tuple:
+    """
+    Check for segment page header format: "Segment [ID] – [Description]"
+    
+    Some documents (like arnecom) use this format:
+    "Segment ST – Transaction Set Header"
+    "Segment BEG – Beginning Segment for Purchase Order"
+    
+    May also appear with newline between "Segment" and the ID:
+    "Segment
+     TD5 - Carrier Details"
+    
+    The word "Segment" followed by segment ID clearly marks a segment definition page.
+    Returns (found, segment_id).
+    """
+    # Pattern 1: "Segment" followed by segment ID on same line
+    # Handles both en-dash (–) and hyphen (-)
+    pattern1 = r"(?i)\bSegment\s+([A-Z][A-Z0-9]{1,2})\s*[–\-]\s*[A-Z]"
+    match = re.search(pattern1, text)
+    if match:
+        seg_id = match.group(1).upper()
+        if seg_id in KNOWN_SEGMENTS:
+            return (True, seg_id)
+    
+    # Pattern 2: "Segment" on one line, "[ID] -" on next line (arnecom style)
+    pattern2 = r"(?i)\bSegment\s*\n\s*([A-Z][A-Z0-9]{1,2})\s*[–\-]"
+    match = re.search(pattern2, text)
+    if match:
+        seg_id = match.group(1).upper()
+        if seg_id in KNOWN_SEGMENTS:
+            return (True, seg_id)
+    
+    return (False, None)
+
+
 def is_raw_edi_sample(text: str) -> bool:
     """
     Check if page contains raw EDI transaction data (sample/example).
@@ -158,6 +193,16 @@ def classify_page(
     # A human recognizes segment pages by their header and element table
     # BUT: index pages can LIST segment headers - must distinguish
     # =========================================================================
+    
+    # Check for explicit "Segment [ID] – [Description]" format (arnecom style)
+    # This is unambiguous - clearly marks a segment definition page
+    seg_label_found, seg_label_id = has_segment_label_header(text)
+    if seg_label_found:
+        return LabelResult(
+            LABEL_SEGMENT, 0.98,
+            segment_id=seg_label_id,
+            reason="segment_label_header"
+        )
     
     # Segment header like "BEG - Beginning Segment for Purchase Order"
     # Only classify as SEGMENT if it's a definition (has element content)

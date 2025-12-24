@@ -1,52 +1,168 @@
 {
-  "accuracy": 0.9534883720930233,
-  "macro_f1": 0.9076576576576576,
-  "class_metrics": {
-    "index": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0,
-      "support": 2
-    },
-    "segment": {
-      "precision": 0.9473684210526315,
-      "recall": 1.0,
-      "f1": 0.972972972972973,
-      "support": 36
-    },
-    "other": {
-      "precision": 1.0,
-      "recall": 0.6,
-      "f1": 0.7499999999999999,
-      "support": 5
-    }
-  },
-  "confusion_matrix": {
-    "other": {
-      "other": 3,
-      "segment": 2
-    },
-    "index": {
-      "index": 2
-    },
-    "segment": {
-      "segment": 36
-    }
-  },
-  "errors": [
-    {
-      "page": 42,
-      "predicted": "segment",
-      "actual": "other",
-      "confidence": 0.85
-    },
-    {
-      "page": 43,
-      "predicted": "segment",
-      "actual": "other",
-      "confidence": 0.85
-    }
-  ],
-  "total_pages": 43,
-  "correct": 41
+    "filename": "d_and_h.pdf",
+    "total_pages": 43,
+    "segment_table_pages": [
+        4,
+        5
+    ],
+    "segment_pages": [
+        {
+            "segment": "ISA",
+            "pages": [
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "segment": "GS",
+            "pages": [
+                9,
+                10
+            ]
+        },
+        {
+            "segment": "ST",
+            "pages": [
+                11
+            ]
+        },
+        {
+            "segment": "BEG",
+            "pages": [
+                12
+            ]
+        },
+        {
+            "segment": "REF",
+            "pages": [
+                13,
+                29,
+                35
+            ]
+        },
+        {
+            "segment": "PER",
+            "pages": [
+                14,
+                30,
+                31
+            ]
+        },
+        {
+            "segment": "FOB",
+            "pages": [
+                15,
+                16
+            ]
+        },
+        {
+            "segment": "ITD",
+            "pages": [
+                17,
+                18
+            ]
+        },
+        {
+            "segment": "DTM",
+            "pages": [
+                19,
+                36
+            ]
+        },
+        {
+            "segment": "TD5",
+            "pages": [
+                20,
+                21
+            ]
+        },
+        {
+            "segment": "N9",
+            "pages": [
+                22
+            ]
+        },
+        {
+            "segment": "MSG",
+            "pages": [
+                23
+            ]
+        },
+        {
+            "segment": "N1",
+            "pages": [
+                24,
+                25
+            ]
+        },
+        {
+            "segment": "N2",
+            "pages": [
+                26
+            ]
+        },
+        {
+            "segment": "N3",
+            "pages": [
+                27
+            ]
+        },
+        {
+            "segment": "N4",
+            "pages": [
+                28
+            ]
+        },
+        {
+            "segment": "PO1",
+            "pages": [
+                32,
+                33
+            ]
+        },
+        {
+            "segment": "PID",
+            "pages": [
+                34
+            ]
+        },
+        {
+            "segment": "CTT",
+            "pages": [
+                37
+            ]
+        },
+        {
+            "segment": "AMT",
+            "pages": [
+                38
+            ]
+        },
+        {
+            "segment": "SE",
+            "pages": [
+                39
+            ]
+        },
+        {
+            "segment": "GE",
+            "pages": [
+                40
+            ]
+        },
+        {
+            "segment": "IEA",
+            "pages": [
+                41
+            ]
+        }
+    ],
+    "other_pages": [
+        1,
+        2,
+        3,
+        42,
+        43
+    ]
 }

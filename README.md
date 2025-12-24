@@ -44,40 +44,46 @@ Detects pages by their distinctive titles:
 - **Glossary**, **Preface**, **Introduction** → OTHER
 - **Appendix**, **Table of Contents** → OTHER
 
-#### Rule 2: Segment Definition Detection
+#### Rule 2: Segment Label Header Detection
+Detects explicit segment page markers:
+- **Format 1**: `Segment ST – Transaction Set Header` (same line)
+- **Format 2**: `Segment` on one line, `TD5 - Carrier Details` on next line
+- Handles both en-dash (–) and hyphen (-)
+
+#### Rule 3: Segment Definition Detection
 A segment page has:
 - **Segment header**: e.g., "BEG - Beginning Segment for Purchase Order"
 - **Element definitions**: Element table with data types (M AN 1/30)
 - **Definition structure**: Pos:, Max:, Usage: patterns
 
-#### Rule 3: Index Table Detection
+#### Rule 4: Index Table Detection
 An index page has:
 - **Table headers**: "Pos Seg ID Name", "Req Des Max"
 - **Segment listing rows**: Position numbers + segment IDs in tabular format
 - **Multiple segments listed**: Table structure with segment directory
 
-#### Rule 4: Context-Based Continuation
+#### Rule 5: Context-Based Continuation
 Pages following segments often continue the same segment:
 - **Element references**: PO101, BEG02 patterns
 - **Syntax/Semantics sections**
 - **Code value tables**
 - **Description patterns**
 
-#### Rule 5: Index Continuation
+#### Rule 6: Index Continuation
 Pages following index continue the listing:
 - **Segment listing table structure**
 - **Multiple segment IDs in text**
 
-#### Rule 6: Loop Overview Detection
+#### Rule 7: Loop Overview Detection
 Pages that discuss loop structure but aren't segment definitions → OTHER
 
-#### Rule 7: Segment Pattern Detection
+#### Rule 8: Segment Pattern Detection
 Multiple segment documentation patterns indicate segment content:
 - Pos:, Max:, Loop:, Usage: patterns
 - Element references
 - Syntax Rules, Semantics sections
 
-#### Rule 8: Document Structure Validation
+#### Rule 9: Document Structure Validation
 Second pass corrects low-confidence labels based on document flow:
 - Isolated OTHER pages between segments → likely SEGMENT continuation
 - Low-confidence pages near index → likely INDEX continuation
@@ -93,23 +99,26 @@ Second pass corrects low-confidence labels based on document flow:
 
 | Metric | Value |
 |--------|-------|
-| **Pseudo-label accuracy** | 94.84% |
-| **ML model accuracy (GT)** | 94.31% |
+| **Pseudo-label accuracy** | 95.90% (725/756 pages) |
 
-### Known Labeling Errors (39 pages)
+### Known Labeling Errors (31 pages)
 
-| Document | Accuracy | Main Issues |
-|----------|----------|-------------|
-| arnecom | 55.6% | Segment pages not detected (missing patterns) |
-| cardinal_glass | 71.0% | Over-correction in structure validation |
-| ti | 81.0% | Segment pages falling to default |
-| erico | 85.1% | Index/segment confusion |
-| volvo | 88.9% | Segment pages not detected |
+| Document | Accuracy | Errors | Main Issues |
+|----------|----------|--------|-------------|
+| cardinal_glass | 71.0% | 9 | Over-correction in structure validation |
+| ti | 81.0% | 4 | Segment pages falling to default |
+| erico | 85.1% | 7 | Index/segment confusion |
+| volvo | 88.9% | 2 | Segment pages not detected |
+| coupa | 90.9% | 3 | Over-correction to segment |
+| john_deere | 91.7% | 3 | Segment pages falling to default |
+| govx | 95.0% | 1 | Over-correction to segment |
+| lowes | 95.5% | 1 | Index not detected |
+| adobe | 96.8% | 1 | Segment detected as appendix |
 
-Error patterns to investigate:
-1. **SEGMENT→default**: Segment pages missing detection patterns
-2. **OTHER→structure_segment**: Over-correction in validation pass
-3. **INDEX→segment**: Index pages with segment-like headers
+Error patterns:
+1. **SEGMENT→default**: Segment pages missing detection patterns (ti, volvo, john_deere)
+2. **OTHER→structure_segment**: Over-correction in validation pass (erico, coupa, govx)
+3. **INDEX→segment**: Index pages with segment-like headers (erico, coupa)
 
 ## Setup
 

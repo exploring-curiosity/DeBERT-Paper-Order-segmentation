@@ -1,46 +1,54 @@
 {
-  "accuracy": 0.9473684210526315,
-  "macro_f1": 0.8781362007168458,
-  "class_metrics": {
-    "index": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0,
-      "support": 2
-    },
-    "segment": {
-      "precision": 0.9375,
-      "recall": 1.0,
-      "f1": 0.967741935483871,
-      "support": 15
-    },
-    "other": {
-      "precision": 1.0,
-      "recall": 0.5,
-      "f1": 0.6666666666666666,
-      "support": 2
-    }
-  },
-  "confusion_matrix": {
-    "other": {
-      "other": 1,
-      "segment": 1
-    },
-    "index": {
-      "index": 2
-    },
-    "segment": {
-      "segment": 15
-    }
-  },
-  "errors": [
-    {
-      "page": 19,
-      "predicted": "segment",
-      "actual": "other",
-      "confidence": 0.9104341268539429
-    }
-  ],
-  "total_pages": 19,
-  "correct": 18
+    "filename": "fisher_scientific.pdf",
+    "total_pages": 19,
+    "segment_table_pages": [
+        2,
+        3
+    ],
+    "segment_pages": [
+        {
+            "segment": "UNKNOWN",
+            "pages": [
+                4,
+                5
+            ]
+        },
+        {
+            "segment": "REF",
+            "pages": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ]
+        },
+        {
+            "segment": "PER",
+            "pages": [
+                13,
+                14
+            ]
+        },
+        {
+            "segment": "PID",
+            "pages": [
+                15,
+                16
+            ]
+        },
+        {
+            "segment": "CTT",
+            "pages": [
+                17,
+                18
+            ]
+        }
+    ],
+    "other_pages": [
+        1,
+        19
+    ]
 }

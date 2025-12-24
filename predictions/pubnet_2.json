@@ -1,35 +1,96 @@
 {
-  "accuracy": 1.0,
-  "macro_f1": 0.6666666666666666,
-  "class_metrics": {
-    "index": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0,
-      "support": 1
-    },
-    "segment": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0,
-      "support": 16
-    },
-    "other": {
-      "precision": 0,
-      "recall": 0,
-      "f1": 0,
-      "support": 0
-    }
-  },
-  "confusion_matrix": {
-    "index": {
-      "index": 1
-    },
-    "segment": {
-      "segment": 16
-    }
-  },
-  "errors": [],
-  "total_pages": 17,
-  "correct": 17
+    "filename": "pubnet_2.pdf",
+    "total_pages": 17,
+    "segment_table_pages": [
+        1
+    ],
+    "segment_pages": [
+        {
+            "segment": "ST",
+            "pages": [
+                2
+            ]
+        },
+        {
+            "segment": "BEG",
+            "pages": [
+                3
+            ]
+        },
+        {
+            "segment": "REF",
+            "pages": [
+                4
+            ]
+        },
+        {
+            "segment": "CSH",
+            "pages": [
+                5
+            ]
+        },
+        {
+            "segment": "DTM",
+            "pages": [
+                6
+            ]
+        },
+        {
+            "segment": "TD5",
+            "pages": [
+                7
+            ]
+        },
+        {
+            "segment": "N1",
+            "pages": [
+                8
+            ]
+        },
+        {
+            "segment": "N2",
+            "pages": [
+                9
+            ]
+        },
+        {
+            "segment": "N3",
+            "pages": [
+                10
+            ]
+        },
+        {
+            "segment": "N4",
+            "pages": [
+                11
+            ]
+        },
+        {
+            "segment": "PER",
+            "pages": [
+                12
+            ]
+        },
+        {
+            "segment": "PO1",
+            "pages": [
+                13,
+                14,
+                15
+            ]
+        },
+        {
+            "segment": "CTT",
+            "pages": [
+                16
+            ]
+        },
+        {
+            "segment": "SE",
+            "pages": [
+                17
+            ]
+        }
+    ],
+    "other_pages": []
 }

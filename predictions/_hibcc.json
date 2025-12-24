@@ -1,169 +1,105 @@
 {
-  "filename": "_hibcc.pdf",
-  "total_pages": 35,
-  "segment_table_pages": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6
-  ],
-  "segment_pages": [
-    {
-      "segment": "ST",
-      "pages": [
-        7
-      ]
-    },
-    {
-      "segment": "BEG",
-      "pages": [
-        8
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        9
-      ]
-    },
-    {
-      "segment": "FOB",
-      "pages": [
-        10
-      ]
-    },
-    {
-      "segment": "CSH",
-      "pages": [
-        11
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        12
-      ]
-    },
-    {
-      "segment": "N9",
-      "pages": [
-        13
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        14
-      ]
-    },
-    {
-      "segment": "MSG",
-      "pages": [
-        15
-      ]
-    },
-    {
-      "segment": "N1",
-      "pages": [
-        16,
-        17
-      ]
-    },
-    {
-      "segment": "N2",
-      "pages": [
-        18
-      ]
-    },
-    {
-      "segment": "N3",
-      "pages": [
-        19
-      ]
-    },
-    {
-      "segment": "N4",
-      "pages": [
-        20
-      ]
-    },
-    {
-      "segment": "REF",
-      "pages": [
-        21
-      ]
-    },
-    {
-      "segment": "PER",
-      "pages": [
-        22
-      ]
-    },
-    {
-      "segment": "FOB",
-      "pages": [
-        23
-      ]
-    },
-    {
-      "segment": "PO1",
-      "pages": [
-        24,
+    "filename": "_hibcc.pdf",
+    "total_pages": 35,
+    "segment_table_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+    ],
+    "segment_pages": [
+        {
+            "segment": "UNKNOWN",
+            "pages": [
+                7,
+                18,
+                19,
+                20
+            ]
+        },
+        {
+            "segment": "BEG",
+            "pages": [
+                8
+            ]
+        },
+        {
+            "segment": "REF",
+            "pages": [
+                9,
+                21
+            ]
+        },
+        {
+            "segment": "FOB",
+            "pages": [
+                10,
+                23
+            ]
+        },
+        {
+            "segment": "CSH",
+            "pages": [
+                11
+            ]
+        },
+        {
+            "segment": "DTM",
+            "pages": [
+                12,
+                13,
+                14,
+                31
+            ]
+        },
+        {
+            "segment": "MSG",
+            "pages": [
+                15,
+                16,
+                17,
+                32,
+                33
+            ]
+        },
+        {
+            "segment": "PER",
+            "pages": [
+                22
+            ]
+        },
+        {
+            "segment": "PO1",
+            "pages": [
+                24
+            ]
+        },
+        {
+            "segment": "PID",
+            "pages": [
+                27
+            ]
+        },
+        {
+            "segment": "SDQ",
+            "pages": [
+                28,
+                29,
+                30
+            ]
+        },
+        {
+            "segment": "CTT",
+            "pages": [
+                34,
+                35
+            ]
+        }
+    ],
+    "other_pages": [
         25,
         26
-      ]
-    },
-    {
-      "segment": "PID",
-      "pages": [
-        27
-      ]
-    },
-    {
-      "segment": "SDQ",
-      "pages": [
-        28,
-        29
-      ]
-    },
-    {
-      "segment": "N9",
-      "pages": [
-        30
-      ]
-    },
-    {
-      "segment": "DTM",
-      "pages": [
-        31
-      ]
-    },
-    {
-      "segment": "MSG",
-      "pages": [
-        32
-      ]
-    },
-    {
-      "segment": "N1",
-      "pages": [
-        33
-      ]
-    },
-    {
-      "segment": "CTT",
-      "pages": [
-        34
-      ]
-    },
-    {
-      "segment": "SE",
-      "pages": [
-        35
-      ]
-    }
-  ],
-  "other_pages": []
+    ]
 }

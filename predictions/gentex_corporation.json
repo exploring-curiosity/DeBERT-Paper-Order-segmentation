@@ -1,46 +1,57 @@
 {
-  "accuracy": 0.9411764705882353,
-  "macro_f1": 0.9538239538239538,
-  "class_metrics": {
-    "index": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0,
-      "support": 1
-    },
-    "segment": {
-      "precision": 0.9090909090909091,
-      "recall": 1.0,
-      "f1": 0.9523809523809523,
-      "support": 10
-    },
-    "other": {
-      "precision": 1.0,
-      "recall": 0.8333333333333334,
-      "f1": 0.9090909090909091,
-      "support": 6
-    }
-  },
-  "confusion_matrix": {
-    "other": {
-      "other": 5,
-      "segment": 1
-    },
-    "index": {
-      "index": 1
-    },
-    "segment": {
-      "segment": 10
-    }
-  },
-  "errors": [
-    {
-      "page": 17,
-      "predicted": "segment",
-      "actual": "other",
-      "confidence": 0.85
-    }
-  ],
-  "total_pages": 17,
-  "correct": 16
+    "filename": "gentex_corporation.pdf",
+    "total_pages": 17,
+    "segment_table_pages": [
+        5
+    ],
+    "segment_pages": [
+        {
+            "segment": "UNKNOWN",
+            "pages": [
+                7
+            ]
+        },
+        {
+            "segment": "BEG",
+            "pages": [
+                8
+            ]
+        },
+        {
+            "segment": "PER",
+            "pages": [
+                9,
+                10
+            ]
+        },
+        {
+            "segment": "PO1",
+            "pages": [
+                11,
+                12,
+                13
+            ]
+        },
+        {
+            "segment": "SCH",
+            "pages": [
+                14
+            ]
+        },
+        {
+            "segment": "CTT",
+            "pages": [
+                15,
+                16
+            ]
+        }
+    ],
+    "other_pages": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        17
+    ]
 }

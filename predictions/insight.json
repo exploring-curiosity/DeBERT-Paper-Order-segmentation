@@ -1,38 +1,133 @@
 {
-  "accuracy": 1.0,
-  "macro_f1": 1.0,
-  "class_metrics": {
-    "index": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0,
-      "support": 2
-    },
-    "segment": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0,
-      "support": 30
-    },
-    "other": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0,
-      "support": 1
-    }
-  },
-  "confusion_matrix": {
-    "other": {
-      "other": 1
-    },
-    "index": {
-      "index": 2
-    },
-    "segment": {
-      "segment": 30
-    }
-  },
-  "errors": [],
-  "total_pages": 33,
-  "correct": 33
+    "filename": "insight.pdf",
+    "total_pages": 33,
+    "segment_table_pages": [
+        2,
+        3
+    ],
+    "segment_pages": [
+        {
+            "segment": "ST",
+            "pages": [
+                4
+            ]
+        },
+        {
+            "segment": "BEG",
+            "pages": [
+                5
+            ]
+        },
+        {
+            "segment": "CUR",
+            "pages": [
+                6
+            ]
+        },
+        {
+            "segment": "REF",
+            "pages": [
+                7,
+                8,
+                27,
+                28
+            ]
+        },
+        {
+            "segment": "PER",
+            "pages": [
+                9,
+                10,
+                22,
+                24,
+                29
+            ]
+        },
+        {
+            "segment": "FOB",
+            "pages": [
+                11
+            ]
+        },
+        {
+            "segment": "CSH",
+            "pages": [
+                12
+            ]
+        },
+        {
+            "segment": "DTM",
+            "pages": [
+                13,
+                30
+            ]
+        },
+        {
+            "segment": "TD5",
+            "pages": [
+                14,
+                15
+            ]
+        },
+        {
+            "segment": "N9",
+            "pages": [
+                16
+            ]
+        },
+        {
+            "segment": "MSG",
+            "pages": [
+                17
+            ]
+        },
+        {
+            "segment": "N1",
+            "pages": [
+                18,
+                23,
+                31
+            ]
+        },
+        {
+            "segment": "N2",
+            "pages": [
+                19
+            ]
+        },
+        {
+            "segment": "N3",
+            "pages": [
+                20
+            ]
+        },
+        {
+            "segment": "N4",
+            "pages": [
+                21
+            ]
+        },
+        {
+            "segment": "PO1",
+            "pages": [
+                25,
+                26
+            ]
+        },
+        {
+            "segment": "CTT",
+            "pages": [
+                32
+            ]
+        },
+        {
+            "segment": "SE",
+            "pages": [
+                33
+            ]
+        }
+    ],
+    "other_pages": [
+        1
+    ]
 }

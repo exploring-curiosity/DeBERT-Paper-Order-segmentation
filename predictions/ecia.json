@@ -1,38 +1,93 @@
 {
-  "accuracy": 1.0,
-  "macro_f1": 1.0,
-  "class_metrics": {
-    "index": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0,
-      "support": 2
-    },
-    "segment": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0,
-      "support": 19
-    },
-    "other": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1": 1.0,
-      "support": 2
-    }
-  },
-  "confusion_matrix": {
-    "other": {
-      "other": 2
-    },
-    "index": {
-      "index": 2
-    },
-    "segment": {
-      "segment": 19
-    }
-  },
-  "errors": [],
-  "total_pages": 23,
-  "correct": 23
+    "filename": "ecia.pdf",
+    "total_pages": 23,
+    "segment_table_pages": [
+        2,
+        3
+    ],
+    "segment_pages": [
+        {
+            "segment": "ST",
+            "pages": [
+                4
+            ]
+        },
+        {
+            "segment": "BEG",
+            "pages": [
+                5
+            ]
+        },
+        {
+            "segment": "CUR",
+            "pages": [
+                6
+            ]
+        },
+        {
+            "segment": "TAX",
+            "pages": [
+                7,
+                8,
+                9,
+                10,
+                11
+            ]
+        },
+        {
+            "segment": "REF",
+            "pages": [
+                12,
+                19
+            ]
+        },
+        {
+            "segment": "PER",
+            "pages": [
+                13
+            ]
+        },
+        {
+            "segment": "FOB",
+            "pages": [
+                14,
+                15
+            ]
+        },
+        {
+            "segment": "TD5",
+            "pages": [
+                16
+            ]
+        },
+        {
+            "segment": "PO1",
+            "pages": [
+                17,
+                18
+            ]
+        },
+        {
+            "segment": "SCH",
+            "pages": [
+                20
+            ]
+        },
+        {
+            "segment": "CTT",
+            "pages": [
+                21
+            ]
+        },
+        {
+            "segment": "SE",
+            "pages": [
+                22
+            ]
+        }
+    ],
+    "other_pages": [
+        1,
+        23
+    ]
 }
