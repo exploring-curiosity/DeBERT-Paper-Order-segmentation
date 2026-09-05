@@ -126,7 +126,7 @@ def detect_segment_header(fonts: List[dict], text: str) -> Tuple[bool, Optional[
     for i, line in enumerate(lines):
         line = line.strip()
         
-        # Pattern: "XXX - Segment Name" or "XXX Segment Name"
+        # Pattern: "XXX - Segment Name" or "XXX – Segment Name"
         match = re.match(r"^([A-Z]{2,3})\s*[-–]\s*[A-Z]", line)
         if match and match.group(1) in KNOWN_SEGMENTS:
             return True, match.group(1)
