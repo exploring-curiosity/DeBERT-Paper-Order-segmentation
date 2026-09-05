@@ -184,9 +184,7 @@ def analyze_document(pdf_path: Path, gt_path: Path) -> Dict:
             "other": {"font_sizes": [], "text_densities": []}
         }
     }
-    
-    prev_segment = None
-    
+
     for page_num in range(len(doc)):
         analysis = analyze_page(doc, page_num)
         gt_label, gt_segment = get_page_label_from_gt(gt, page_num + 1)
